@@ -63,7 +63,7 @@ class product_match():
         for product in self.products:
             key = product["manufacturer"].lower()
             model = product["model"].lower()
-            product_name = product["product_name"].lower()
+            product_name = product["product_name"]
             self.model_by_manufacturer[key][model] = product_name
 
     #catch common patterns with numbers. don't search model in these patterns
